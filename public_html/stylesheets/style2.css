@@ -1,0 +1,76 @@
+@import url'https://fonts.googleapis.com/css?family=Montserrat';
+@import url'https://fonts.googleapis.com/css?family=Great+Vibes';
+
+.div .header{
+  background-color:red;
+}
+
+  .story-img{
+    position: relative;
+    top: 100px;
+    margin-bottom: 150px;
+    display: block;
+  }
+
+  .story-title{
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size:50px;
+    padding-bottom:20px;
+  }
+
+  .story-text{
+    padding-left:150px;
+    padding-right:130px;
+    font-family: 'Montserrat', serif;
+    color: #163D22;
+    padding-bottom:40px;
+    font-size:20px;
+  }
+
+.parallaxOne { 
+    /* The image used */
+    background-image: url("http://waunbroderick.me/images/paralaxOne.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallaxTwo { 
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+body, html {
+    height: 100%;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("../images/paralaxOne.jpg");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    -webkit-background-size: stretch; /* For WebKit*/
+    -moz-background-size: stretch;    /* Mozilla*/
+    -o-background-size: stretch;      /* Opera*/
+    background-size: stretch;         /* Generic*/
+}

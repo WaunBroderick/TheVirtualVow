@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+/*=====NAVBAR STARTS====*/
+/* Style the navbar */
+.navbar {
+    overflow: hidden;
+    background-color: green;
+    height: 80px;
+    margin-bottom: 0!important;
+    position: fixed;
+    top: 0;
+    line-height: 60px;
+    width: 100vw;
+    z-index: 10;
+  }
+
+  .navbar-custom {
+    color: #FFFFFF;
+    background-color: #163D22;
+}
+
+.nav-wrapper {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+} @media(max-width: 768px) {
+    .nav-wrapper {
+      width: 90%;
+    }
+  } @media(max-width: 638px) {
+      .nav-wrapper {
+        width: 100%;
+      }
+    } 
+
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  #nav-list li {
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px;
+    vertical-align:bottom;
+    line-height:normal;   
+}
+#navbar ul {
+  font-family: 'Playfair Display', serif;
+  display: inline-block;
+  float: right;
+  list-style: none;
+  /* margin-right: 14px; */
+  margin-top: -2px;
+  text-align: right;
+  transition: transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+} @media(max-width: 640px) {
+    #navbar ul {
+      display: none;
+    }
+  } @media(orientation: landscape) {
+      #navbar ul {
+        display: inline-block;
+      }
+    }
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li a {
+  color: #FFFFFF;
+  font-family: 'Playfair Display', serif;
+  display: block;
+  font-size: 0.8em;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+#navbar li a:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  color: #FFFAF0;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+/* Animated Bottom Line */
+#navbar li a:before, #navbar li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: #FFFFFF;
+}
+
+#navbar li a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+#navbar li a:after {
+  background: #FFFAF0;
+  right: 0;
+  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+
+#navbar li a:hover:before {
+  background: #FFFAF0;
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+#navbar li a:hover:after {
+  background: transparent;
+  width: 100%;
+  /* transition: 0s; */
+}
+
+.logo-img {
+    position:absolute;
+    left:10px;
+    top:10px;
+    margin: 0px 15px 15px 0px;
+}
+
+.avatar-img {
+  float:right;
+  position:absolute;
+  left:95%;
+  top:10px;
+  margin: 0px 15px 15px 0px;
+}
+
+.site-menu {
+ padding-left: 199%;
+}
+sharei
+  /*=====NAVBAR ENDS====*/
+
+  body{
+      
+      padding-top:800px;
+      margin-top:800px;
+    
+  }
+
+  #category-container{
+    background-color: #FFFAF0;
+    height:1000px;
+  }
+
+
+  /*====================================================================*/
+
+ #welcome{
+    font-family: 'Great Vibes', cursive;
+    font-size:90px;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+    color: #163D22;
+    text-align: center;
+  }
