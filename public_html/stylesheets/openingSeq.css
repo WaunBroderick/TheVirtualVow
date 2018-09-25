@@ -1,0 +1,122 @@
+@import url'https://fonts.googleapis.com/css?family=Montserrat';
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+ #welcomeTitle{
+    font-family: 'Great Vibes', cursive;
+    font-size:90px;
+    color: #163D22;
+    top: 50%;
+    left: 50%;
+    margin-left:-260px;
+    margin-top:-50px;
+    position:absolute;
+    -webkit-animation: fadeinout 5s linear forwards;
+    animation: fadeinout 5s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+
+ #introText1{
+    font-family: 'Montserrat', serif;
+    font-size:40px;
+    color: #163D22;
+    opacity: 0;
+    top: 50%;
+    left: 49%;
+    margin-left:-460px;
+    margin-top:-50px;
+    position:absolute;
+    -webkit-animation: fadein;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-delay: 3s;
+    text-align: center;
+}
+
+@-webkit-keyframes fadein {
+  0%,25% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadein {
+  0%,25% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#introText2{
+    font-family: 'Montserrat', serif;
+    font-size:40px;
+    color: #163D22;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    margin-left:-880px;
+    margin-top:-50px;
+    padding-left:200px;
+    padding-right:100px;
+    position:absolute;
+    -webkit-animation: fadein;
+    -webkit-animation-duration: 8s;
+    -webkit-animation-delay: 7s;
+    text-align: center;
+}
+
+@-webkit-keyframes fadein {
+  0%,25% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadein {
+  0%,25% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#initalForm{
+  top: 50%;
+  margin-top:-100px;
+  margin-left:-270px;
+  display: inline-block;
+  text-align: center;
+  outline: none;
+  color: #163D22;
+  font-size: 30px;
+  -webkit-animation: fadein2;
+  -webkit-animation-duration: 45s;
+  position:absolute;
+
+  }
+
+@keyframes fadein2 {
+  0%,25% { opacity: 0; }
+  50% { opacity: 100; }
+  100% { opacity: 100; }
+}
+
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+input { 
+    text-align: center; 
+}
+
+lineUp{
+ display:inline;
+position:relative;
+}
+
+
+

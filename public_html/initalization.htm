@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Getting Started</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>TD Vow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -25,8 +26,7 @@
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="stylesheets/interface.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/openingSeq.css">
 <!--===============================================================================================-->
     <script  src="js/index.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
@@ -34,21 +34,37 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
 <!--===============================================================================================-->
-<head>
+
 </head>
 
-<body>
-    <div id="category-container">
+<span id="welcomeTitle">
+Hello Katherine
+</span>
 
-    </div>
-    <h1>testing purposes</h1>
-    <p>
-        testinggggggggggggggggggg
-    </p>
-</body>
+<span id="introText1">
+Welcome to TD Vow, your intelligent wedding registry assistant.
+</span>
+
+<span id="introText2">
+Before I get everything set-up for you, I have a few questions I'd like to ask to get everything customized to best fit the unique couple you and your partner are...
+</span>
+
+<center>
+<form id = "initalForm" action="./host.htm">
+	Who is your spouse:<br>
+	<input style="border:none" type="text" name="firstname" value=""><br>
+	Could you give us his email so we can invite him:<br>
+	<input style="border:none" type="text" name="lastname" value=""><br><br>
+	Is there anyone else that is in your family?
+<div class="lineUp">
+	<input style="border:none;display:inline;" type="radio" name="gender" value="male" checked> Yes<br>
+	<input style="border:none;display:inline;" type="radio" name="gender" value="female"> No<br>
+</div>
+	<input style="border:none" type="submit" value="Submit">
+  </form>
+</center>
+  
 
 
-<footer>
 
-</footer>
 </head>
