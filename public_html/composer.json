@@ -1,0 +1,7 @@
+{
+    "require": {
+        "webonyx/graphql-php": "^0.12.6",
+        "stevenmaguire/yelp-php": "^2.1",
+        "php-console/php-console": "^3.1"
+    }
+}

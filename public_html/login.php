@@ -27,9 +27,9 @@ if (mysqli_num_rows($result) > 0) {
     // output data of each row
         $row = mysqli_fetch_row($result);
         //assign database values to variables
-        $id = $row[0]; 
-        $pwd = $row[1];
-        $flag = $row[2]; 
+        $id = $row[1]; 
+        $pwd = $row[2];
+        $flag = $row[3]; 
         //two conditional branches used to differentiate user types for our demo; can be expanded on to be more complex
         if($flag == 0){
             //client page
@@ -37,7 +37,7 @@ if (mysqli_num_rows($result) > 0) {
         }
         else {
             //host page
-            header('Location: host.htm'); 
+            header('Location: initalization.htm'); 
         }
 exit;
 } 

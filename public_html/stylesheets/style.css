@@ -47,7 +47,6 @@
   }
   h1 strong {
     font-weight: 400;
-    color: #ea4c4c;
   }
   
   h2 {
@@ -236,7 +235,7 @@
     background-image: url("img_parallax.jpg");
 
     /* Set a specific height */
-    height: 500px; 
+    height: 100%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -257,6 +256,9 @@ body, html {
     /* Full height */
     height: 100%; 
 
+    overflow-x: hidden;
+  overflow-y: scroll;
+
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -268,7 +270,6 @@ body, html {
 
 .bucketItem{
   padding-bottom:20px;
-  color:red;
   height: 150px;
   margin-top:25px;
 
@@ -288,3 +289,28 @@ body, html {
   height: auto;
   position:relative;
 }
+
+#registryBox{
+  margin-top:150px;
+  height:70%; 
+  width: 60%;
+  overflow:auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:18px;
+  line-height: 1.6;
+}
+
+.scroll2::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.scroll2::-webkit-scrollbar-thumb {
+  background: #163D22; 
+}
+
+td{
+  padding: 400px;
+  border-spacing: 5px 10px;
+}
+

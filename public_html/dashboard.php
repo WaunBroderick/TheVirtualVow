@@ -28,24 +28,34 @@ if ($result->num_rows > 0) {
         $percentint = intval(($curr/$total)*100);
         $percentstr = strval($percentint)+ "%";
         if ($row["category"] == 1){
-            echo '<div class="bucketItem" style="background-image: url(../images/bucketBGI/AfricaTravel.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; ">';
+            echo '<div class="bucketItem" >';
         }
         else{
-            echo '<div class="bucketItem" style="background-image: url(../images/bucketBGI/AfricaTravel.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;">';
+            echo '<div class="bucketItem" >';
         }
-        echo '
-        id: ' . $row["id"]. ' - Name: ' . $row["name"]. " " . $row["category"]. '<br>
-        <div class="progress">
-        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90"
-        aria-valuemin="0" aria-valuemax="100" style="width:'.$percentint. '%">
-          40% Complete (success)
-        </div>
-      </div></div>';
+        echo '<div class="bucketItem">
+        ' . $row["name"]. " " . $row["category"]. '<br>
+        <div
+        data-preset="fan"
+        class="ldBar label-center",
+        style="width:100%;height:90px",
+        data-stroke="#163D22",
+        data-value="' .$percentint. '"
+      >
+      </div>
+      </div><form action="deleteRow.php"><button type="submit" name= "delete" value="'. $row["name"]. '">Delete Item</button></form></div>';
     }
 } else {
-    echo "0 results";
+    echo "";
 }
 $conn->close();
+
+
+
+function dropRow($param1) {
+    echo "Hello world!";
+    echo $param1;
+}
 
 
 ?>
