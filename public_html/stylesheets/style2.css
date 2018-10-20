@@ -74,3 +74,7 @@ body, html {
     -o-background-size: stretch;      /* Opera*/
     background-size: stretch;         /* Generic*/
 }
+
+.radialPercent{
+  float: right;
+}

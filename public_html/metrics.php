@@ -25,7 +25,7 @@ if ($result->num_rows > 0) {
     // output data of each row
     $row = $result->fetch_assoc();
     $row1 = $result1->fetch_assoc();
-    echo ' '.$row1["confirmed"]. ' of your ' .$row["total"]. ' guests have currently RSVP\'d for your wedding!';
+    echo ' There are '.$row1["confirmed"]. ' of your ' .$row["total"]. ' guests that are still yet to RSVP for your wedding!';
 } else {
     echo "0 results";
 }

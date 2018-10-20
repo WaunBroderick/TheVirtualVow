@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!--===============================================================================================-->
 
 </head>
@@ -166,11 +167,38 @@
       <center><?php include 'metrics.php';?></center>
       
  <center><img src="images/divider.png" alt="Girl in a jacket"></center>
- <div class="bucketSpan">
+ <a name="dashboard"></a><div class="bucketSpan">
 <?php include 'dashboard.php';?>
  </div>
 
+ <center><button onclick="document.getElementById('id01').style.display='block'"
+ class="w3-button">Add Item</button></center>
+ <br>
+
+
  
+ <!-- The Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+      class="w3-button w3-display-topright">&times;</span><br>
+      <center><p>Please enter your item details below</p></center>
+      <form action="/addRow.php">
+       <center> <br>Item Name:<br>
+        <input type="text" name="name"><br>
+        Description:<br>
+        <input type="text" name="description"><br><br>
+        Current Saved:
+        <input type="number" step="0.01" name="curr">
+        Total Price:
+        <input type="number" step="0.01" name="tot"></center><br>
+        <center><?php include 'categories.php';?></center>
+        <center><input type="submit" value="Submit"></center><br>
+      </form>
+    </div>
+  </div>
+</div>
 
 </body>
 

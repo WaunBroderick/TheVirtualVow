@@ -20,29 +20,27 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
-echo "<table>
+echo "<table id='registry' class='tablesorter'>
 <thead>
     <tr>
-      <th>Name</th>
-      <th>Color</th>
-      <th>Description</th>
+      <th><span>Name</span></th>
+      <th><span>Contribution</span></th>
+      <th><span>Status</span></th>
     </tr>
-  </thead>";
+  </thead><tbody>";
     while($row = $result->fetch_assoc()) {
             $fullName = $row["user_data.user_id"] ;
             if ($row["rsvp"] == 0){
-                $rsvp = "RSPV'd";
+                $rsvp = "RSVP'd";
             }else{
                 $rsvp = " ";
             }
-        echo '<div><tr><th>
-        '. $row["fullName"] .'</th><th>
-        '. $row["contribution"] .'</th><th>
-        '. $rsvp .'</th><th>
-        '. $row[""] .'</th>
-        </div><tr>';
+        echo '<div><tr><td class="lalign">
+        '. $row["fullName"] .'</td><td>
+        '. $row["contribution"] .'</td><td>
+        '. $rsvp .'</td><tr></div>';
     }
-    echo "</table>";
+    echo "</tbody></table>";
 } else {
     echo "0 results";
 }

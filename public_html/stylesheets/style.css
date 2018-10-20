@@ -1,11 +1,11 @@
 @import url'https://fonts.googleapis.com/css?family=Montserrat';
 @import url'https://fonts.googleapis.com/css?family=Great+Vibes';
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 .div .header{
   background-color:red;
 }
 
-  
   .wrap {
     position: relative;
     bottom: 0;
@@ -309,8 +309,42 @@ body, html {
   background: #163D22; 
 }
 
-td{
-  padding: 400px;
-  border-spacing: 5px 10px;
+table { border-collapse: collapse; border-spacing: 0; 
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1;
+  padding: 22px 10px;
+  padding-bottom: 55px;}
+
+#registry {
+  margin: 0 auto;
+  font-size: 0.8em;
+  margin-bottom: 15px;
 }
 
+#registry thead {
+  cursor: pointer;
+  background: #163D22;
+  color: #FFFFFF;
+}
+#registry thead tr th { 
+  padding: 12px 30px;
+  padding-left: 42px;
+}
+#registry thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#registry tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+#registry tbody tr td.lalign {
+  text-align: left;
+}
+
+h1.bucketItem{
+  color:#949494;
+  font-size:100px;
+}
