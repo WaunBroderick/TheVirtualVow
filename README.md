@@ -1,6 +1,6 @@
 # TheVirtualVow
 An intelligent Wedding registry application
-<img src="images/Demo.gif" height="400" width="550">
+<img src="images/Demo.mov" height="400" width="550">
 
 <h4>Server settings</h4>
 
