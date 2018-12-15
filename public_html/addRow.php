@@ -14,7 +14,7 @@ if ($conn->connect_error) {
 } 
 
 $var_name = $_GET['name'];
-$var_decription = $_GET['description'];
+$var_description = $_GET['description'];
 $var_current = $_GET['curr'];
 $var_total = $_GET['tot'];
 $var_category = $_GET['categories'];

@@ -54,6 +54,11 @@ if ($result->num_rows > 0) {
                 -moz-background-size: stretch;
                 -o-background-size: stretch;
                 background-size: stretch;" >';}
+        else if ($row["category"] == 10){
+            echo '<div class="bucketItem" style="background-image:url(../images/bucketBGI/financialServices.png);background-repeat: no-repeat;-webkit-background-size: stretch;background-size: 100% 100%;border-radius: 25px;z-index: -1;
+            -moz-background-size: stretch;
+            -o-background-size: stretch;
+            background-size: stretch;" >';}
         else if ($row["category"] == 11){
             echo '<div class="bucketItem" style="background-image:url(../images/bucketBGI/oceaniaTravel.png);background-repeat: no-repeat;-webkit-background-size: stretch;background-size: 100% 100%;border-radius: 25px;z-index: -1;
             -moz-background-size: stretch;
@@ -66,10 +71,10 @@ if ($result->num_rows > 0) {
         echo '<div class="bucketItem">
         <div style="font-size:21px;color:#163D22;margin-bottom: -20px;margin-left:15px;">' . $row["name"]. '</div><br>
         <div style="font-size:11px;color:#949494;margin-left: 20px;max-width:900px;display: inline-block;">' .$row["description"]. '</div>
-        <div style="color:#949494;float:right;margin-top:-10px;display: inline;display: inline-block;"class="radialPercent"><div
-        data-preset="fan"
-        class="ldBar label-center ",
-        style="width:100%;height:90px",
+        <div style="color:#949494;float:right;margin-top:-20px;display: inline-block;"class="radialPercent"><div
+        data-preset="fan",
+        class="ldBar",
+        style="width:100%;height:90px;",
         data-stroke="#163D22",
         data-value="' .$percentint. '"
       >
