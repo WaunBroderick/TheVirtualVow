@@ -1,4 +1,4 @@
-<?php include 'home_buckets.php';?>
+<?php include 'phpFunctions/home_buckets.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +45,7 @@
 </head>
 
 <header>
-<?php require 'menu.php';?>
+<?php require 'phpFunctions/menu.php';?>
 
     </header>
 
@@ -164,11 +164,11 @@
  <script  src="js/index.js"></script>
  
  <center><div id="welcome">Welcome Back</div></center>
-      <center><?php include 'metrics.php';?></center>
+      <center><?php include 'phpFunctions/metrics.php';?></center>
       
  <center><img src="images/divider.png" alt="Green flower page divider"></center>
  <a name="dashboard"></a><div class="bucketSpan">
-<?php include 'dashboard.php';?>
+<?php include 'phpFunctions/dashboard.php';?>
  </div>
 
  <center><button onclick="document.getElementById('id01').style.display='block'"
@@ -184,7 +184,7 @@
       <span onclick="document.getElementById('id01').style.display='none'" 
       class="w3-button w3-display-topright">&times;</span><br>
       <center><p>Please enter your item details below</p></center>
-      <form action="/addRow.php">
+      <form action="phpFunctions/addRow.php">
        <center> <br>Item Name:<br>
         <input type="text" name="name"><br>
         Description:<br>
@@ -193,7 +193,7 @@
         <input type="number" step="0.01" name="curr">
         Total Price:
         <input type="number" step="0.01" name="tot"></center><br>
-        <center><?php include 'categories.php';?></center>
+        <center><?php include 'phpFunctions/categories.php';?></center>
         <center><input type="submit" value="Submit"></center><br>
       </form>
     </div>
