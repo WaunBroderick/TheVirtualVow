@@ -13,15 +13,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-$var_name = $_GET['items'];
-$var_offer = $_GET['offer'];
+$var_name = $_GET['delete'];
 
 
-
-$sql = "UPDATE buckets SET current_price = (current_price + '$var_offer') WHERE id = '$var_name';";
+$sql = ("DELETE FROM buckets WHERE name='$var_name'");
 $result = $conn->query($sql);
 
 
-header("Location: ./client.htm#dashboard");
+header("Location: ../host.htm#dashboard");
     exit;
 ?>

@@ -20,6 +20,6 @@ $sql = ("DELETE FROM buckets WHERE name='$var_name'");
 $result = $conn->query($sql);
 
 
-header("Location: ./host.htm#dashboard");
+header("Location: ../host.htm#dashboard");
     exit;
 ?>

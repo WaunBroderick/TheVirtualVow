@@ -25,6 +25,6 @@ VALUES ('$var_name', '$var_category', '$var_description', '$var_current', '$var_
 $result = $conn->query($sql);
 
 
-header("Location: ./host.htm#dashboard");
+header("Location: ../host.htm#dashboard");
     exit;
 ?>

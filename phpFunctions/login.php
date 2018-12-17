@@ -37,7 +37,7 @@ if (mysqli_num_rows($result) > 0) {
         }
         else {
             //host page
-            header('Location: initalization.htm'); 
+            header('Location: ../initalization.htm'); 
         }
 exit;
 } 
