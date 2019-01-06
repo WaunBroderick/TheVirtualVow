@@ -22,14 +22,32 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-
-            echo '<p>' .$row["flightname"]. '</p>';
-            echo '<p>' .$row["leaving"]. '</p>';
-            echo '<p>' .$row["destination"]. '</p>';
-            echo '<p>' .$row["price"]. '</p>';
-            echo '<p>' .$row["TDPref"]. '</p>';
-        
+            if ($row["TDPref"] == 0){
+                echo'<div class="selectionOption" id="'.$row["flightname"]. '">';
+                echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"/>';
+                echo 'Trip: <p>' .$row["flightname"]. '</p>';
+                echo '<p>Leaving: ' .$row["leaving"]. '</p>';
+                echo '<p>Destination: ' .$row["destination"]. '</p>';
+                echo '<p>Total Price: ' .$row["price"]. '</p>';
+                echo '<p>' .$row["TDPref"]. '</p>';
+                echo'</div>';
+    } else{
+        echo'<style type="text/css">
+        #' .$row["flightname"].' {
+            background-color:black;
+            color=green;
+        }
+        </style>';
+        echo'<div class="selectionOption" id="'.$row["flightname"]. '">';
+        echo '<img src="data:image/jpeg;base64,'.base64_encode( $row['image'] ).'"/>';
+                echo 'Trip: <p>' .$row["flightname"]. '</p>';
+                echo '<p>Leaving: ' .$row["leaving"]. '</p>';
+                echo '<p>Destination: ' .$row["destination"]. '</p>';
+                echo '<p>Total Price: ' .$row["price"]. '</p>';
+                echo '<p>' .$row["TDPref"]. '</p>';
+                echo'</div>';
     }
+}
 }else {
     echo "NO SHIT HOMIE";
 }

@@ -348,3 +348,19 @@ h1.bucketItem{
   color:#949494;
   font-size:100px;
 }
+
+.selectionOption{
+  color:Red;
+  background-color: #F4F4F4;
+  margin: 15px;
+  padding:2px;
+  border-radius: 10px;
+  max-height:400px;
+}
+
+.selectionOption img {
+  float: left;
+  width:300px;
+  height:100%;
+  max-height:220px;
+}
